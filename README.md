@@ -31,3 +31,8 @@ git clone https://github.com/your-username/notesapp-markdown.git
 cd notesapp-markdown
 npm install
 npm run dev
+
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
