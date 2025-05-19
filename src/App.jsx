@@ -39,7 +39,7 @@ function App() {
   return (
     
     <div className="flex flex-row h-screen">
-      <header className="bg-gray-800 text-white p-4 text-center">
+      <header className="bg-gray-800 text-white p-2 text-center ">
         <h1 className="text-xl font-bold">Markdown Notes</h1>
       </header>
       <div className="w-1/2 h-full overflow-auto">
