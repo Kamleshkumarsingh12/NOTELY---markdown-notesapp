@@ -3,6 +3,7 @@ import './App.css'
 import Editor from './Components/Editor'
 import Preview from './Components/Preview'
 import { useEffect } from "react";
+import NotesLogo from '/notes-icon.png';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
     
     <div className="flex flex-row h-screen">
       <header className="bg-gray-800 text-white p-2 text-center ">
+        <img src={NotesLogo} alt="Notes Logo" className="w-6 h-6" />
         <h1 className="text-xl font-bold">Markdown Notes</h1>
       </header>
       <div className="w-1/2 h-full overflow-auto">
