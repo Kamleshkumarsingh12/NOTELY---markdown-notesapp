@@ -8,7 +8,7 @@ const Editor = ({ markdown, setMarkdown }) => {
   if (confirmClear) {
     setMarkdown("");
     localStorage.removeItem("markdown-note");
-    alert("Note cleared!"); // 👈 This shows only if the user confirmed
+    alert("ALL CLEAR!"); // 👈 This shows only if the user confirmed
   }
 };
 
@@ -49,7 +49,7 @@ const handleExport = (format) => {
  return (
     <div className="relative h-full">
       {/* Button Group - Now at TOP RIGHT */}
-      <div className="absolute top-4 right-4 flex space-x-2">
+      <div className="aflex justify-end gap-2 p-4 flex-wrap md:absolute md:top-4 md:right-4">
         {/* Export Button */}
         <button onClick={() => setShowExportPopup(true)}className="hover:bg-blue-600 bg-blue-500 text-white px-3 py-1.5 rounded shadow">Export</button>
         
@@ -65,7 +65,6 @@ const handleExport = (format) => {
         placeholder="On your mark, get set, go!"
       />
 
-      // Export Popup IN DESIRED FORMAT  
      {showExportPopup && (
   <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50">
     <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-2xl w-64">
